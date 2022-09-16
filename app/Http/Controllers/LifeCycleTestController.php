@@ -24,9 +24,9 @@ class LifeCycleTestController extends Controller
         $test = app()->make('lifeCycleTest');
 
         //サービスコンテナなしのパターン
-        // $message = new Message();
-        // $sample = new sample($message);
-        // $sample->run();
+        $message = new Message();
+        $sample = new sample($message);
+        $sample->run();
 
         //サービスコンテナapp()ありのパターン
         //依存関係を解決することができる。
